@@ -1,0 +1,65 @@
+# TN Begin added by yu.guo 20230801 EKFOGO4G-124
+on boot
+  chown system system /proc/touch_info/tp_gesture_mode
+  chmod 0660 /proc/touch_info/tp_gesture_mode
+# TN End added by yu.guo 20230801 EKFOGO4G-124
+
+#TN Begin modify for mount /mnt/vendor/elabel/regulatory_info.png by yang.chen/860621 202409027 CR/EKLAMU-664
+on boot
+  chown system system /mnt/elabel/regulatory_info.png
+  chmod 0664 /mnt/elabel/regulatory_info.png
+  restorecon_recursive /mnt/elabel
+#TN End modify for mount /mnt/vendor/elabel/regulatory_info.png by yang.chen/860621 20230927 CR/EKLAMU-664
+
+#
+# add by haiyong.shan EKLAMU-1546 20240704 begin
+    chown system system /sys/class/ant_det/gpio_level
+    chmod 0666 /sys/class/ant_det/gpio_level
+# add by haiyong.shan EKLAMU-1546 20240704 end
+# add by haiyong.shan EKFOGO4G-1551 20230829 begin
+on boot && property:ro.boot.product.hardware.sku=ss
+    setprop persist.radio.multisim.config ss
+
+on boot && property:ro.boot.product.hardware.sku=dsds
+    setprop persist.radio.multisim.config dsds
+
+on boot && property:ro.boot.product.hardware.sku=nfc_ss
+    setprop persist.radio.multisim.config ss
+    setprop persist.vendor.radio.msimmode ss
+    setprop persist.vendor.mims_support 1
+    setprop persist.vendor.radio.smart.data.switch 0
+    setprop ro.vendor.mtk_disable_cap_switch 1
+    setprop ro.vendor.mtk_data_config 0
+    setprop ro.boot.opt_sim_count 1
+    setprop persist.vendor.radio.multisimslot 1
+
+on boot && property:ro.boot.product.hardware.sku=nfc_dsds
+    setprop persist.radio.multisim.config dsds
+    setprop persist.vendor.radio.msimmode dsds
+    setprop persist.vendor.mims_support 2
+    setprop persist.vendor.radio.smart.data.switch 1
+    setprop ro.vendor.mtk_disable_cap_switch 0
+    setprop ro.vendor.mtk_data_config 1
+    setprop ro.boot.opt_sim_count 2
+    setprop persist.vendor.radio.multisimslot 2
+
+on boot && property:ro.boot.product.hardware.sku=nonfc_ss
+    setprop persist.radio.multisim.config ss
+    setprop persist.vendor.radio.msimmode ss
+    setprop persist.vendor.mims_support 1
+    setprop persist.vendor.radio.smart.data.switch 0
+    setprop ro.vendor.mtk_disable_cap_switch 1
+    setprop ro.vendor.mtk_data_config 0
+    setprop ro.boot.opt_sim_count 1
+    setprop persist.vendor.radio.multisimslot 1
+
+on boot && property:ro.boot.product.hardware.sku=nonfc_dsds
+    setprop persist.radio.multisim.config dsds
+    setprop persist.vendor.radio.msimmode dsds
+    setprop persist.vendor.mims_support 2
+    setprop persist.vendor.radio.smart.data.switch 1
+    setprop ro.vendor.mtk_disable_cap_switch 0
+    setprop ro.vendor.mtk_data_config 1
+    setprop ro.boot.opt_sim_count 2
+    setprop persist.vendor.radio.multisimslot 2
+# add by haiyong.shan EKFOGO4G-1551 20230829 end

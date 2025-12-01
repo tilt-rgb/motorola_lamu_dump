@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <business-edition-disabled-app package="com.dti.motorola" />
+    <business-edition-disabled-app package="com.aura.oobe.motorola" />
+    <business-edition-disabled-app package="com.inmobi.installer" />
+    <business-edition-disabled-app package="com.glance.lockscreen" />
+    <business-edition-disabled-app package="com.facebook.katana" />
+    <business-edition-disabled-app package="com.facebook.appmanager" />
+    <business-edition-disabled-app package="com.facebook.system" />
+    <business-edition-disabled-app package="com.facebook.services" />
+    <business-edition-disabled-app package="com.instagram.android" />
+    <business-edition-disabled-app package="com.taboola.ody" />
+</config>

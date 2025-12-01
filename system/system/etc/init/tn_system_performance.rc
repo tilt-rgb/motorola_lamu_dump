@@ -1,0 +1,35 @@
+	
+service tinno_heapandlmk_setup /system/bin/tn_system_performance.sh "tinno_heapandlmk_setup"
+    class core
+    user root
+    group root system
+    disabled
+    oneshot
+
+on early-init
+    exec_start tinno_heapandlmk_setup
+	
+    setprop dalvik.vm.heapminfree ${persist.sys.tinno.dalvik.vm.heapminfree}
+    setprop dalvik.vm.heapmaxfree ${persist.sys.tinno.dalvik.vm.heapmaxfree}
+    setprop dalvik.vm.heapstartsize ${persist.sys.tinno.dalvik.vm.heapstartsize}
+    setprop dalvik.vm.heapsize ${persist.sys.tinno.dalvik.vm.heapsize}
+    setprop dalvik.vm.heapgrowthlimit ${persist.sys.tinno.dalvik.vm.heapgrowthlimit}
+    setprop dalvik.vm.madvise.artfile.size ${persist.sys.tinno.art}
+    setprop dalvik.vm.madvise.odexfile.size ${persist.sys.tinno.odex}
+    setprop dalvik.vm.madvise.vdexfile.size ${persist.sys.tinno.vdex}
+	
+    setprop ro.lmk.psi_complete_stall_ms ${persist.sys.tinno.lmk.psi_complete_stall_ms}
+    setprop ro.lmk.swap_free_low_percentage ${persist.sys.tinno.lmk.swap_free_low_percentage}
+    setprop ro.lmk.thrashing_limit ${persist.sys.tinno.lmk.thrashing_limit}
+    setprop ro.lmk.thrashing_limit_decay ${persist.sys.tinno.lmk.thrashing_limit_decay}
+    setprop ro.lmk.swap_util_max ${persist.sys.tinno.lmk.swap_util_max}
+    setprop ro.lmk.kill_timeout_ms ${persist.sys.tinno.lmk.kill_timeout_ms}
+
+        
+#on property:sys.boot_completed=1
+#   setprop sys.sysctl.extra_free_kbytes ${persist.sys.tinno.extra_free_kbytes}
+   
+   
+   
+
+

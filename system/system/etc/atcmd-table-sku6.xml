@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<atcmds version="1">
+
+
+    <ATCMD Category="table0" AT="AT+ERFTX=1,0,0,0"></ATCMD>
+
+    <ATCMD Category="table4" AT="AT+ERFTX=1,0,0,0"></ATCMD>
+
+
+                <!-- table2_RF_2G_DOWN_GSM850_EGSM900_DCS1800_PCS1900 -->
+    <ATCMD Category="table2" AT="AT+ERFTX=10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"></ATCMD>
+                <!-- table2_RF_3G_DOWN_B1_B2_B4_B5_B8_B19 -->
+    <ATCMD Category="table2" AT="AT+ERFTX=10,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"></ATCMD>
+                <!-- table2_RF_4G_DOWN_B1-->
+    <ATCMD Category="table2" AT="AT+ERFTX=10,3,1,0,0,0"></ATCMD>
+    <!-- table2_RF_4G_DOWN_B3 -->
+    <ATCMD Category="table2" AT="AT+ERFTX=10,3,3,0,0,0"></ATCMD>
+                <!-- table2_RF_4G_DOWN_B5 -->
+    <ATCMD Category="table2" AT="AT+ERFTX=10,3,5,0,0,0"></ATCMD>
+    <!-- table2_RF_4G_DOWN_B7 -->
+    <ATCMD Category="table2" AT="AT+ERFTX=10,3,7,0,0,0"></ATCMD>
+    <!-- table2_RF_4G_DOWN_B8 -->
+    <ATCMD Category="table2" AT="AT+ERFTX=10,3,8,0,0,0"></ATCMD>
+    <!-- table2_RF_4G_DOWN_B20 -->
+    <ATCMD Category="table2" AT="AT+ERFTX=10,3,20,0,0,0"></ATCMD>
+    <!-- table2_RF_4G_DOWN_B28 -->
+    <ATCMD Category="table2" AT="AT+ERFTX=10,3,28,0,0,0"></ATCMD>
+    <!-- table2_RF_4G_DOWN_B40 -->
+    <ATCMD Category="table2" AT="AT+ERFTX=10,3,40,0,0,0"></ATCMD>
+    <!-- table2_RF_4G_DOWN_B41 -->
+    <ATCMD Category="table2" AT="AT+ERFTX=10,3,41,0,0,0"></ATCMD>
+
+                <!-- table3_RF_2G_DOWN_GSM850_EGSM900_DCS1800_PCS1900 -->
+    <ATCMD Category="table3" AT="AT+ERFTX=10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"></ATCMD>
+                <!-- table3_RF_3G_DOWN_B1_B2_B4_B5_B8_B19 -->
+    <ATCMD Category="table3" AT="AT+ERFTX=10,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"></ATCMD>
+                <!-- table3_RF_4G_DOWN_B1 -->
+    <ATCMD Category="table3" AT="AT+ERFTX=10,3,1,0,0,0"></ATCMD>
+    <!-- table3_RF_4G_DOWN_B3 -->
+    <ATCMD Category="table3" AT="AT+ERFTX=10,3,3,0,0,0"></ATCMD>
+                <!-- table3_RF_4G_DOWN_B5 -->
+    <ATCMD Category="table3" AT="AT+ERFTX=10,3,5,0,0,0"></ATCMD>
+    <!-- table3_RF_4G_DOWN_B7 -->
+    <ATCMD Category="table3" AT="AT+ERFTX=10,3,7,0,0,0"></ATCMD>
+    <!-- table3_RF_4G_DOWN_B8 -->
+    <ATCMD Category="table3" AT="AT+ERFTX=10,3,8,0,0,0"></ATCMD>
+    <!-- table3_RF_4G_DOWN_B20 -->
+    <ATCMD Category="table3" AT="AT+ERFTX=10,3,20,0,0,0"></ATCMD>
+    <!-- table3_RF_4G_DOWN_B28 -->
+    <ATCMD Category="table3" AT="AT+ERFTX=10,3,28,0,0,0"></ATCMD>
+    <!-- table3_RF_4G_DOWN_B40 -->
+    <ATCMD Category="table3" AT="AT+ERFTX=10,3,40,0,0,0"></ATCMD>
+    <!-- table3_RF_4G_DOWN_B41 -->
+    <ATCMD Category="table3" AT="AT+ERFTX=10,3,41,0,0,0"></ATCMD>
+
+
+                <!-- table6_RF_2G_DOWN_GSM850_EGSM900_DCS1800_PCS1900 -->
+    <ATCMD Category="table6" AT="AT+ERFTX=10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"></ATCMD>
+                <!-- table6_RF_3G_DOWN_B1_B2_B4_B5_B8_B19 -->
+    <ATCMD Category="table6" AT="AT+ERFTX=10,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"></ATCMD>
+                <!-- table6_RF_4G_DOWN_B1-->
+    <ATCMD Category="table6" AT="AT+ERFTX=10,3,1,0,0,0"></ATCMD>
+    <!-- table6_RF_4G_DOWN_B3 -->
+    <ATCMD Category="table6" AT="AT+ERFTX=10,3,3,0,0,0"></ATCMD>
+                <!-- table6_RF_4G_DOWN_B5 -->
+    <ATCMD Category="table6" AT="AT+ERFTX=10,3,5,0,0,0"></ATCMD>
+    <!-- table6_RF_4G_DOWN_B7 -->
+    <ATCMD Category="table6" AT="AT+ERFTX=10,3,7,0,0,0"></ATCMD>
+    <!-- table6_RF_4G_DOWN_B8 -->
+    <ATCMD Category="table6" AT="AT+ERFTX=10,3,8,0,0,0"></ATCMD>
+    <!-- table6_RF_4G_DOWN_B20 -->
+    <ATCMD Category="table6" AT="AT+ERFTX=10,3,20,0,0,0"></ATCMD>
+    <!-- table6_RF_4G_DOWN_B28 -->
+    <ATCMD Category="table6" AT="AT+ERFTX=10,3,28,0,0,0"></ATCMD>
+    <!-- table6_RF_4G_DOWN_B40 -->
+    <ATCMD Category="table6" AT="AT+ERFTX=10,3,40,0,0,0"></ATCMD>
+    <!-- table6_RF_4G_DOWN_B41 -->
+    <ATCMD Category="table6" AT="AT+ERFTX=10,3,41,0,0,0"></ATCMD>
+
+
+                <!-- table7_RF_2G_DOWN_GSM850_EGSM900_DCS1800_PCS1900 -->
+    <ATCMD Category="table7" AT="AT+ERFTX=10,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"></ATCMD>
+                <!-- table7_RF_3G_DOWN_B1_B2_B4_B5_B8_B19 -->
+    <ATCMD Category="table7" AT="AT+ERFTX=10,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"></ATCMD>
+                <!-- table7_RF_4G_DOWN_B1 -->
+    <ATCMD Category="table7" AT="AT+ERFTX=10,3,1,0,0,0"></ATCMD>
+    <!-- table7_RF_4G_DOWN_B3 -->
+    <ATCMD Category="table7" AT="AT+ERFTX=10,3,3,0,0,0"></ATCMD>
+                <!-- table7_RF_4G_DOWN_B5 -->
+    <ATCMD Category="table7" AT="AT+ERFTX=10,3,5,0,0,0"></ATCMD>
+    <!-- table7_RF_4G_DOWN_B7 -->
+    <ATCMD Category="table7" AT="AT+ERFTX=10,3,7,0,0,0"></ATCMD>
+    <!-- table7_RF_4G_DOWN_B8 -->
+    <ATCMD Category="table7" AT="AT+ERFTX=10,3,8,0,0,0"></ATCMD>
+    <!-- table7_RF_4G_DOWN_B20 -->
+    <ATCMD Category="table7" AT="AT+ERFTX=10,3,20,0,0,0"></ATCMD>
+    <!-- table7_RF_4G_DOWN_B28 -->
+    <ATCMD Category="table7" AT="AT+ERFTX=10,3,28,0,0,0"></ATCMD>
+    <!-- table7_RF_4G_DOWN_B40 -->
+    <ATCMD Category="table7" AT="AT+ERFTX=10,3,40,0,0,0"></ATCMD>
+    <!-- table7_RF_4G_DOWN_B41 -->
+    <ATCMD Category="table7" AT="AT+ERFTX=10,3,41,0,0,0"></ATCMD>
+
+
+
+
+
+</atcmds>

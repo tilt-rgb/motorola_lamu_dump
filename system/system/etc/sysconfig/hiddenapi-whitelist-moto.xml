@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <!-- TN Begin modify by wangyuting 20240708 EKLAMU-44 -->
+    <hidden-api-whitelisted-app package="com.motorola.ccc.ota" />
+    <!-- TN End modify by wangyuting 20240708 EKLAMU-44 -->
+</config>

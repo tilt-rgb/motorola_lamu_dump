@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+  <!-- TN Begin modify by wangyuting 20240708 EKLAMU-44 -->
+  <allow-in-power-save package="com.motorola.ccc.ota" />
+  <allow-in-data-usage-save package="com.motorola.ccc.ota" />
+  <!-- TN End modify by wangyuting 20240708 EKLAMU-44 -->
+</permissions>

@@ -1,0 +1,148 @@
+on property:ro.boot.carrier=none
+    setprop ro.com.google.clientidbase android-motorola
+    setprop ro.com.google.clientidbase.ms android-motorola-rvo3
+    setprop ro.com.google.clientidbase.vs android-motorola-rvo3
+
+# TINNO BEGIN
+# Add by chongxin.cheng for PBGAM-1411 with FAQ19818
+on property:ro.boot.carrier=amxmx
+   setprop persist.vendor.radio.fd.on.only.r8 1
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-americamovil-{country}-rvc3
+   setprop ro.com.google.clientidbase.vs android-americamovil-{country}-rvc3
+   setprop ro.com.google.clientidbase.am android-americamovil-{country}
+   setprop ro.csc.amazon.partnerid  telcelmx
+   
+on property:ro.boot.carrier=docomo
+   setprop ro.csc.amazon.partnerid  docomo
+
+on property:ro.boot.carrier=reteu
+   setprop ro.moto.emea.feature.gms_req true
+
+on property:ro.boot.carrier=attmx
+   setprop persist.vendor.radio.fd.on.only.r8 1
+
+on property:ro.boot.carrier=tefmx
+   setprop persist.vendor.radio.fd.on.only.r8 1
+# TINNO END.
+
+# TINNO BEGIN
+# Add by chongxin.cheng for PBGAM-1972
+on property:ro.boot.carrier=amxmx
+   setprop ro.feature.telcellclearcode true
+
+# TINNO END.
+
+# TINNO BEGIN
+# Add by chongxin.cheng for PBGAM-2469
+on property:ro.boot.carrier=tigco
+   setprop persist.vendor.data.not.val true
+# TINNO END.
+
+on property:ro.boot.carrier=amxco
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-americamovil-{country}-rvc3
+   setprop ro.com.google.clientidbase.vs android-americamovil-{country}-rvc3
+   setprop ro.com.google.clientidbase.am android-americamovil-{country}
+
+#wangying add for amazon PDFCCE-473
+on property:ro.boot.carrier=attmx
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-attmexico-mx-rvc3
+   setprop ro.com.google.clientidbase.vs android-attmexico-mx-rvc3
+   setprop ro.com.google.clientidbase.am ""
+   setprop ro.csc.amazon.partnerid attmx
+
+on property:ro.boot.carrier=amxpe
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-americamovil-{country}-rvc3
+   setprop ro.com.google.clientidbase.vs android-americamovil-{country}-rvc3
+   setprop ro.com.google.clientidbase.am android-americamovil-{country}
+
+on property:ro.boot.carrier=amxcl
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-americamovil-{country}-rvc3
+   setprop ro.com.google.clientidbase.vs android-americamovil-{country}-rvc3
+   setprop ro.com.google.clientidbase.am android-americamovil-{country}
+
+on property:ro.boot.carrier=amxla
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-americamovil-{country}-rvc3
+   setprop ro.com.google.clientidbase.vs android-americamovil-{country}-rvc3
+   setprop ro.com.google.clientidbase.am android-americamovil-{country}
+
+on property:ro.boot.carrier=eegb
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-ee-uk-rvc3
+   setprop ro.com.google.clientidbase.vs android-ee-uk-rvc3
+   setprop ro.com.google.clientidbase.cr android-motorola
+   setprop ro.com.google.clientidbase.am ""
+
+#daming.cao,PBGAM-4072 gang.an,timit amazon
+on property:ro.boot.carrier=timit
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.am ""
+   setprop ro.com.google.clientidbase.ms android-tim-it-rvc3
+   setprop ro.com.google.clientidbase.vs android-tim-it-rvc3
+   setprop ro.com.google.clientidbase.cr android-motorola
+   setprop ro.csc.amazon.partnerid timit
+
+on property:ro.boot.carrier=o2gb
+    setprop ro.com.google.clientidbase android-motorola
+    setprop ro.com.google.clientidbase.ms android-tef-{country}-rvc2
+    setprop ro.com.google.clientidbase.vs android-tef-{country}-rvc2
+    setprop ro.com.google.clientidbase.am android-tef-{country}
+    setprop ro.com.google.clientidbase.cr android-motorola
+
+on property:ro.boot.carrier=oraeu
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-orange-{country}-rvc3
+   setprop ro.com.google.clientidbase.vs android-orange-{country}-rvc3
+   setprop ro.com.google.clientidbase.am android-orange-{country}
+   setprop ro.com.google.clientidbase.cr android-motorola
+
+on property:ro.boot.carrier=vfeu
+   setprop ro.com.google.clientidbase.ms android-vf-{country}-rvc3
+   setprop ro.com.google.clientidbase.vs android-vf-{country}-rvc3
+   setprop ro.com.google.clientidbase.am android-vf-{country}
+   setprop ro.com.google.clientidbase.cr android-motorola
+   
+on property:persist.sys.channel_id=windit
+   setprop ro.csc.amazon.partnerid 3it
+
+on property:ro.boot.carrier=reteu
+	setprop ro.moto.emea.feature.gms_req true
+
+#wangying add for EKJAVA-190
+on property:ro.boot.carrier=vfau
+   setprop ro.csc.amazon.partnerid vfau
+   
+#yabin.ling dd for EKLAMU-9180
+on property:ro.boot.carrier=3gb
+   setprop ro.com.google.clientidbase.ms android-h3g-{country}-rvc3
+   setprop ro.com.google.clientidbase.vs android-h3g-{country}-rvc3
+   setprop ro.com.google.clientidbase.cr android-motorola
+   setprop ro.com.google.clientidbase.am ""
+   setprop ro.csc.amazon.partnerid 3uk
+
+# must be last one for the default setting
+on property:ro.vendor.clientid.default=true
+   setprop ro.com.google.clientidbase android-motorola
+   setprop ro.com.google.clientidbase.ms android-motorola-rvo3
+   setprop ro.com.google.clientidbase.vs android-motorola-rvo3
+
+# dongwei.lv add for PDFCCE-653
+on property:ro.carrier=*
+   setprop ro.oem.key1 ${ro.carrier}
+
+on property:ro.product.lenovo_version=true
+        setprop ro.product.white_label true
+        
+on property:ro.pt.lenovo_version=true
+        setprop ro.product.white_label true
+		
+on property:ro.boot.hardware.sku=XT2423-3
+    setprop setupwizard.feature.predeferred_enabled true
+	
+on property:ro.boot.hardware.sku=XT2425-4
+    setprop setupwizard.feature.predeferred_enabled true

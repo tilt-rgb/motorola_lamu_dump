@@ -1,0 +1,13 @@
+on charger && property:ro.build.type=user
+    trigger early-fs
+    trigger fs
+    trigger post-fs
+    trigger late-fs
+    trigger post-fs-data
+    class_stop main
+    class_stop late_start
+    trigger tks-charger
+
+on tks-charger && property:persist.sys.tksautoboot=1
+  setprop sys.powerctl "reboot,tks-charger"
+

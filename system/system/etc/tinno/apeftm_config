@@ -1,0 +1,14 @@
+<CAP_SENSOR_VALID_CHANNELS>,aw_sar0_ch0d,aw_sar0_ch3d,aw_sar0_ch4d,aw_sar0_ch5d,aw_sar0_ch7d
+<KEYTEST_SETTINGS>,VOL UP=24,VOL DOWN=25
+<CAMERA_NICKNAME_0>,s5kjnssq_mipi_raw
+<CAMERA_NICKNAME_1>,1s5k4h7_mipi_raw,s5k3p9sp_mipi_raw
+<CAMERA_NICKNAME_4>,sc202cs_mipi_raw
+<FINGERPRINT_NICKNAME>,qtech-fpc1560,ofi-gf3976
+<STEREO_SPEAKER>,right=moto.ogg,left=moto.ogg
+<RECEIVER_SOURCE>,moto.ogg
+<CHARGER_CURRENT>,500,1500,3000
+<INDICATOR_LED>,false
+<CALL_NUMBER>,112
+<LOOPBACK>,MIC2=false,EARPHONE=true,EARPHONE_KEY=true
+<TP_TYPE>,0
+<SAR_TWO_LEVEL>,false

@@ -1,0 +1,7 @@
+# TN Begin added by xinrong.chen 2024/8/20 EKLAMU-193
+# Single Tap
+key 22    TV_INPUT_COMPONENT_1
+# Doublw Tap
+key 116   TV_INPUT_COMPONENT_2
+# key 116   POWER
+# TN End added by xinrong.chen 2024/8/20 EKLAMU-193

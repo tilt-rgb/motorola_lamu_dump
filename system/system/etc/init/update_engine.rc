@@ -1,0 +1,14 @@
+# LINT.IfChange
+service update_engine /system/bin/update_engine --logtostderr --logtofile --foreground
+    class late_start
+    user root
+    group root system wakelock inet cache media_rw
+    # TN Begin modify by wangyuting 20241029 EKLAMU-9471
+    # task_profiles OtaProfiles
+    task_profiles CPUSET_SP_FOREGROUND
+    # TN End modify by wangyuting 20241029 EKLAMU-9471
+    disabled
+
+on property:ro.boot.slot_suffix=*
+    enable update_engine
+# LINT.ThenChange(update_engine_nostats.rc)

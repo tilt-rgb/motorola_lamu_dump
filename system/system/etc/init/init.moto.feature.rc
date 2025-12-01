@@ -1,0 +1,94 @@
+
+# TN Begin modify by daming.cao 20240821 EKLAMU-63
+on init
+chown system system /proc/lcd_info/backlight_hbm
+chmod 0666 /proc/lcd_info/backlight_hbm
+
+chown system system /proc/lcd_info/extra_brightness
+chmod 0666 /proc/lcd_info/extra_brightness
+
+# TN End modified by daming.cao 20240831 EKLAMU-265
+chown system system /sys/devices/platform/extcon_usb/cc_role
+chmod 0666 /sys/devices/platform/extcon_usb/cc_role
+
+    #TN modified by liu.hanjun 20240826 EKLAMU--205 start
+    chmod 0664 /sys/devices/platform/charger/battery_protection_mode
+    chown system system /sys/devices/platform/charger/battery_protection_mode
+
+    chmod 0664  /sys/class/power_supply/mtk-gauge/bat_health
+    chown system system /sys/class/power_supply/mtk-gauge/bat_health
+    chmod 0664  /sys/devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt6358-gauge/power_supply/mtk-gauge/bat_health
+    chown system system /sys/devices/platform/1000d000.pwrap/1000d000.pwrap:mt6358-pmic/mt6358-gauge/power_supply/mtk-gauge/bat_health
+
+    chmod 0664 /sys/Hcgc_node/Hcgc_Drive/current_temperature
+    chown system system /sys/Hcgc_node/Hcgc_Drive/current_temperature
+
+    chmod 0664 /sys/block/mmcblk0/device/name
+    chown system system /sys/block/mmcblk0/device/name
+
+    chmod 0664 /sys/class/power_supply/battery/cycle_count
+    chown system system /sys/class/power_supply/battery/cycle_count
+    #TN modified by liu.hanjun 20240826 EKLAMU--205 end
+
+#add for EKLAMU-3729 facebook by jingtao.guo start
+on property:persist.app.facebook.partnerid=*
+   write /data/local/prop/persist.app.facebook.partnerid ${persist.app.facebook.partnerid}
+
+on post-fs-data
+   #CJ: use for tell app some prop is changed
+   mkdir /data/local/prop/ 0666 system system
+#add for EKLAMU-3729 facebook by jingtao.guo end
+
+#add for EKLAMU-95 PAKS by jingtao.guo start
+on post-fs-data
+   #CJ: use for tell app some prop is changed
+   mkdir /mnt/product/persist/prelock/ 0666 system system
+#add for EKLAMU-95 PAKS by jingtao.guo end
+# add by haiyong.shan EKFOGO4G-1551 20230829 begin
+on boot && property:ro.boot.product.hardware.sku=ss
+    setprop persist.radio.multisim.config ss
+
+on boot && property:ro.boot.product.hardware.sku=dsds
+    setprop persist.radio.multisim.config dsds
+
+on boot && property:ro.boot.product.hardware.sku=nfc_ss
+    setprop persist.radio.multisim.config ss
+    setprop persist.vendor.radio.msimmode ss
+    setprop persist.vendor.mims_support 1
+    setprop persist.vendor.radio.smart.data.switch 0
+    setprop ro.vendor.mtk_disable_cap_switch 1
+    setprop ro.vendor.mtk_data_config 0
+    setprop ro.boot.opt_sim_count 1
+    setprop persist.vendor.radio.multisimslot 1
+
+on boot && property:ro.boot.product.hardware.sku=nfc_dsds
+    setprop persist.radio.multisim.config dsds
+    setprop persist.vendor.radio.msimmode dsds
+    setprop persist.vendor.mims_support 2
+    setprop persist.vendor.radio.smart.data.switch 1
+    setprop ro.vendor.mtk_disable_cap_switch 0
+    setprop ro.vendor.mtk_data_config 1
+    setprop ro.boot.opt_sim_count 2
+    setprop persist.vendor.radio.multisimslot 2
+
+on boot && property:ro.boot.product.hardware.sku=nonfc_ss
+    setprop persist.radio.multisim.config ss
+    setprop persist.vendor.radio.msimmode ss
+    setprop persist.vendor.mims_support 1
+    setprop persist.vendor.radio.smart.data.switch 0
+    setprop ro.vendor.mtk_disable_cap_switch 1
+    setprop ro.vendor.mtk_data_config 0
+    setprop ro.boot.opt_sim_count 1
+    setprop persist.vendor.radio.multisimslot 1
+
+on boot && property:ro.boot.product.hardware.sku=nonfc_dsds
+    setprop persist.radio.multisim.config dsds
+    setprop persist.vendor.radio.msimmode dsds
+    setprop persist.vendor.mims_support 2
+    setprop persist.vendor.radio.smart.data.switch 1
+    setprop ro.vendor.mtk_disable_cap_switch 0
+    setprop ro.vendor.mtk_data_config 1
+    setprop ro.boot.opt_sim_count 2
+    setprop persist.vendor.radio.multisimslot 2
+# add by haiyong.shan EKFOGO4G-1551 20240818 end
+

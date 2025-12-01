@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <PlatformWhitelist>
+    <!-- TN Begin modify by dongwei.lv 20230926 EKFOGO4G-2941 -->
+    <App1>co.sitic.pp</App1>
+    <App2>com.motorola.ccc.mainplm</App2>
+    <App3>com.motorola.ccc.devicemanagement</App3>
+    <!-- TN End modify by dongwei.lv 20230926 EKFOGO4G-2941 -->
+    <App4>com.facebook.katana</App4>
+    <App5>com.whatsapp</App5>
+    <App6>com.instagram.android</App6>
+    <App7>com.twitter.android</App7>
+    <App8>org.telegram.messenger</App8>
+    <App9>com.facebook.orca</App9>
+    <App10>com.microsoft.office.outlook</App10>
+    <App11>com.whatsapp.w4b</App11>
+    <App12>com.facebook.lite</App12>
+    <App13>com.snapchat.android</App13>
+    <App14>com.spotify.music</App14>
+    <!-- TN End modify by keji.sun 20231115 EKFOGO4G-7706 -->
+    <App15>com.trustonic.telecoms.standard.dlc</App15>
+    <App16>com.trustonic.telecoms.client.standard.dlc.playground</App16>
+    <App17>com.trustonic.telecoms.standard.dpc</App17>
+    <App18>com.dti.amx</App18>
+    <App19>com.payjoy.access</App19>
+    <App20>com.payjoy.status</App20>
+    <App21>com.dti.motorola</App21>
+    <App22>com.motorola.motobuds</App22>
+  </PlatformWhitelist>
+  <CpuThreshold>80</CpuThreshold>
+  <ScreenOffClean>true</ScreenOffClean>
+  <CleanDelayTime>180000</CleanDelayTime>
+  <MusicDelayTime>600000</MusicDelayTime>
+</configuration>

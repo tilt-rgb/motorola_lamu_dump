@@ -1,0 +1,14 @@
+{
+    "beta": 1,
+    "mouth": 1,
+    "eye": 1,
+    "eyebrow": 1,
+    "blend_weight_border": 0.3,
+    "smoothness": 0.9,
+    "blend_weight_eyebrow": 1,
+    "blend_weight_eye": 1,
+    "blend_weight_mouth": 1,
+    "blend_weight_face": 0.9,
+    "quality_level": 0,
+    "iso_thres": 6500
+}
