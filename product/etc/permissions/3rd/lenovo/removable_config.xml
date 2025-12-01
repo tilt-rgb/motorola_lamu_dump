@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <region name="EMEA">
+        <path include="retgb,02gb,reteu,timit,pluspi,teleu,windit,demogb">com.ape.fmradio</path>
+    </region>
+
+    <region name="LATAM">
+        <path exclude="retcl,opencl,amxcl,avaco">com.ape.fmradio</path>
+    </region>
+
+    <region name="APAC">
+        <path include="retapac,retin,retjp,fau,retanz">com.ape.fmradio</path>
+    </region>
+
+    <region name="unknown">
+
+    </region>
+</config>

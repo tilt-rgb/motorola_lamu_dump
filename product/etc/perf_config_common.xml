@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<perf-optimization version='1'>
+
+    <thermal-config>
+        <config name="normal" policy="1" charge="18w"/>
+        <config name="camera-perf" policy="2" charge="18w"/>
+        <config name="game-save" policy="4" charge="18w"/>
+        <config name="game-perf" policy="6" charge="18w"/>
+        <config name="screen-off" policy="7" charge="18w"/>
+
+        <config name="normal" policy="9" charge="33W"/>
+        <config name="camera-perf" policy="10" charge="33W"/>
+        <config name="game-save" policy="11" charge="33W"/>
+        <config name="game-perf" policy="12" charge="33W"/>
+        <config name="screen-off" policy="13" charge="33W"/>
+    </thermal-config>
+
+    <!-- base mode -->
+    <optimization name="base_app">
+        <thermal>normal</thermal>
+    </optimization>
+
+    <optimization name="screenoff_mode">
+        <thermal>screen-off</thermal>
+    </optimization>
+
+    <!-- classified apps -->
+    <optimization name="camera_mode">
+        <thermal>camera-perf</thermal>
+    </optimization>
+
+    <optimization name="normal_game" parent="base_app">
+        <thermal>game-save</thermal>
+    </optimization>
+
+    <optimization name="heavy_game" parent="base_app">
+        <thermal>game-perf</thermal>
+    </optimization>
+
+
+    <!-- game app optimizations -->
+    <optimization name="com.tencent.tmgp.WePop" refs="normal_game" />
+    <optimization name="com.wepie.snakeoff" refs="normal_game" />
+    <optimization name="cn.jj" refs="normal_game" />
+    <optimization name="com.imangi.templerun2" refs="normal_game" />
+    <optimization name="com.mfp.jelly.official" refs="normal_game" />
+    <optimization name="com.ztgame.bob" refs="normal_game" />
+    <optimization name="tile.master.connect.matching.game" refs="normal_game" />
+    <optimization name="com.vectorunit.redcmgeplaycn" refs="normal_game" />
+    <optimization name="com.popcap.pvz2cthdlx" refs="normal_game" />
+    <optimization name="com.minitech.miniworld" refs="normal_game" />
+    <optimization name="com.outfit7.talkingtomgoldrun" refs="normal_game" />
+    <optimization name="com.happyelements.AndroidAnimal" refs="normal_game" />
+    <optimization name="com.nianticlabs.pokemongo" refs="normal_game" />
+    <optimization name="com.miniclip.eightballpool" refs="normal_game" />
+    <optimization name="com.mojang.minecraftpe" refs="normal_game" />
+    <optimization name="jp.konami.duellinks" refs="normal_game" />
+    <optimization name="com.lilithgame.roc.gp" refs="normal_game" />
+    <optimization name="com.bandainamcoent.dblegends_ww" refs="normal_game" />
+    <optimization name="com.studiowildcard.wardrumstudios.ark" refs="normal_game" />
+    <optimization name="com.youmusic.magictiles" refs="normal_game" />
+    <optimization name="com.ea.game.simcitymobile_row" refs="normal_game" />
+    <optimization name="com.ea.game.nfs14_row" refs="normal_game" />
+    <optimization name="com.foxnextgames.m3" refs="normal_game" />
+    <optimization name="com.pixel.gun3d" refs="normal_game" />
+    <optimization name="com.netmarble.mherosgb" refs="normal_game" />
+    <optimization name="com.vectorunit.purple.googleplay" refs="normal_game" />
+    <optimization name="com.supercell.clashroyale" refs="normal_game" />
+    <optimization name="com.king.candycrushsodasaga" refs="normal_game" />
+    <optimization name="com.king.candycrushsaga" refs="normal_game" />
+    <optimization name="com.nianticlabs.pokemongo" refs="normal_game" />
+    <optimization name="com.playrix.fishdomdd.gplay" refs="normal_game" />
+    <optimization name="net.peakgames.toonblast" refs="normal_game" />
+    <optimization name="net.supertreat.solitaire" refs="normal_game" />
+    <optimization name="air.com.buffalo_studios.newflashbingo" refs="normal_game" />
+    <optimization name="com.gramgames.mergedragons" refs="normal_game" />
+    <optimization name="com.vectorunit.silver.googleplay" refs="normal_game" />
+
+    <optimization name="com.ss.android.ugc.aweme" refs="normal_game" />
+    <optimization name="com.youku.phone" refs="normal_game" />
+
+    <optimization name="com.pwrd.hotta.laohu" refs="heavy_game" />
+    <optimization name="com.dts.freefireth" refs="heavy_game" />
+    <optimization name="com.activision.callofduty.shooter" refs="heavy_game" />
+    <optimization name="com.tencent.lolm" refs="heavy_game" />
+    <optimization name="com.tencent.KiHan" refs="heavy_game" />
+    <optimization name="com.tencent.jkchess" refs="heavy_game" />
+    <optimization name="com.tencent.tmgp.cod" refs="heavy_game" />
+    <optimization name="com.tencent.af" refs="heavy_game" />
+    <optimization name="com.tencent.tmgp.speedmobile" refs="heavy_game" />
+    <optimization name="com.tencent.YiRen" refs="heavy_game" />
+    <optimization name="com.tencent.wmsj" refs="heavy_game" />
+    <optimization name="com.kiloo.subwaysurf" refs="heavy_game" />
+    <optimization name="com.tencent.fifamobile" refs="heavy_game" />
+    <optimization name="com.tencent.tmgp.yys.zqb" refs="heavy_game" />
+    <optimization name="com.miHoYo.Yuanshen" refs="heavy_game" />
+    <optimization name="com.miHoYo.GenshinImpact" refs="heavy_game" />
+    <optimization name="com.miHoYo.ys.bilibili" refs="heavy_game" />
+    <optimization name="com.protopop.brightridge" refs="heavy_game" />
+    <optimization name="com.tencent.ig" refs="heavy_game" />
+    <optimization name="com.com2us.smon.normal.freefull.google.kr.android.common" refs="heavy_game" />
+    <optimization name="com.ngame.allstar.eu" refs="heavy_game" />
+    <optimization name="com.wb.goog.mkx" refs="heavy_game" />
+    <optimization name="com.pubg.imobile" refs="heavy_game" />
+    <optimization name="com.tencent.tmgp.sgame" refs="heavy_game" />
+    <optimization name="com.tencent.tmgp.sgamece" refs="heavy_game" />
+    <optimization name="com.tencent.tmgp.cf" refs="heavy_game" />
+    <optimization name="com.netease.ko" refs="heavy_game" />
+    <optimization name="com.netease.hyxd" refs="heavy_game" />
+    <optimization name="com.netease.mrzh" refs="heavy_game" />
+    <optimization name="com.epicgames.fortnite" refs="heavy_game" />
+    <optimization name="com.maimiao.live.tv" refs="heavy_game" />
+    <optimization name="com.tencent.tmgp.pubgmhd" refs="heavy_game" />
+    <optimization name="com.sukhavati.gotoplaying.bubble.BubbleShooter.mint.aha" refs="heavy_game" />
+    <optimization name="com.hippogames.ludosaga" refs="heavy_game" />
+    <optimization name="com.firsttouchgames.dls3" refs="heavy_game" />
+    <optimization name="com.firsttouchgames.dls7" refs="heavy_game" />
+    <optimization name="com.tonielrosoft.classicludofree" refs="heavy_game" />
+    <optimization name="org.ppsspp.ppsspp" refs="heavy_game" />
+    <optimization name="org.ppsspp.ppssppgold" refs="heavy_game" />
+    <optimization name="bubble.shoot.pop.pl" refs="heavy_game" />
+    <optimization name="com.playspare.watersort3d" refs="heavy_game" />
+    <optimization name="jp.konami.pesam" refs="heavy_game" />
+    <optimization name="com.football.soccer.league" refs="heavy_game" />
+    <optimization name="com.gafv.puzzle.game.classic.blockpuzzle.wood" refs="heavy_game" />
+    <optimization name="com.rioo.runnersubway" refs="heavy_game" />
+    <optimization name="com.higgs.tilemaster3d" refs="heavy_game" />
+    <optimization name="com.ludo.king" refs="heavy_game" />
+    <optimization name="com.tonielro.naijawhotfree" refs="heavy_game" />
+    <optimization name="com.teamd2.live.football.tv" refs="heavy_game" />
+    <optimization name="com.mobile.legends" refs="heavy_game" />
+    <optimization name="com.h8games.helixjump" refs="heavy_game" />
+    <optimization name="com.chillingo.robberybobfree.android.row" refs="heavy_game" />
+    <optimization name="com.garena.game.kgth" refs="heavy_game" />
+    <optimization name="com.amelosinteractive.snake" refs="heavy_game" />
+    <optimization name="com.dts.freefiremax" refs="heavy_game" />
+    <optimization name="com.pubg.krmobile" refs="heavy_game" />
+    <optimization name="com.gameloft.android.ANMP.GloftA9HM" refs="heavy_game" />
+    <optimization name="com.autochessmoba.google" refs="heavy_game" />
+    <optimization name="com.kitkagames.fallbuddies" refs="heavy_game" />
+    <optimization name="com.tocaboca.tocalifeworld" refs="heavy_game" />
+    <optimization name="com.king.farmheroessaga" refs="heavy_game" />
+    <optimization name="net.peakgames.amy" refs="heavy_game" />
+    <optimization name="air.com.playtika.slotomania" refs="heavy_game" />
+    <optimization name="com.zynga.pottermatch" refs="heavy_game" />
+    <optimization name="com.zynga.words3" refs="heavy_game" />
+    <optimization name="com.dts.freefireadv" refs="heavy_game" />
+    <optimization name="com.supercell.brawlstars" refs="heavy_game" />
+    <optimization name="com.roblox.client" refs="heavy_game" />
+    <optimization name="com.supercell.clashofclans" refs="heavy_game" />
+    <optimization name="in.playsimple.wordtrip" refs="heavy_game" />
+    <optimization name="com.kurogame.wutheringwaves.global" refs="heavy_game" />
+</perf-optimization>

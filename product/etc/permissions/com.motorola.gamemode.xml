@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<permissions>
+    <feature name="com.motorola.software.game_mode"/>
+    <feature name="com.motorola.software.odm1.game_mode"/>
+</permissions>

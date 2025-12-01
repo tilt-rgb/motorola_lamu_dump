@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <region name="EMEA">
+        <path include="retgb,02gb,reteu,timit,pluspi,teleu,windit,demogb">com.ape.fmradio</path>
+        <!--add for EKLAMU-3729 facebook by jingtao.guo start-->
+        <path>com.facebook.katana</path>
+        <path>com.instagram.android</path>
+        <path>com.facebook.orca</path>
+        <!--add for EKLAMU-3729 facebook by jingtao.guo end-->
+        <!--add for EKLAMU-1732 by jingtao.guo start-->
+        <path>com.motorola.spaces</path>
+        <!--add for EKLAMU-1732 by jingtao.guo end-->
+    </region>
+
+    <region name="LATAM">
+        <path exclude="retcl,opencl,amxcl,avaco">com.ape.fmradio</path>
+        <!--add for EEKLAMU-3729 facebook by jingtao.guo start-->
+        <path>com.facebook.katana</path>
+        <path>com.instagram.android</path>
+        <path>com.facebook.orca</path>
+        <!--add for EKLAMU-3729 facebook by jingtao.guo end-->
+    </region>
+
+    <region name="APAC">
+        <path include="retapac,retin,retjp,fau,retanz">com.ape.fmradio</path>
+        <!--add for EKLAMU-3729 facebook by jingtao.guo start-->
+        <path>com.facebook.katana</path>
+        <path>com.instagram.android</path>
+        <path>com.facebook.orca</path>
+        <!--add for EEKLAMU-3729 facebook by jingtao.guo end-->
+    </region>
+
+    <region name="unknown">
+        <!--add for EKLAMU-3729 facebook by jingtao.guo start-->
+        <path>com.facebook.katana</path>
+        <path>com.instagram.android</path>
+        <path>com.facebook.orca</path>
+        <!--add for EKLAMU-3729 facebook by jingtao.guo end-->
+    </region>
+</config>

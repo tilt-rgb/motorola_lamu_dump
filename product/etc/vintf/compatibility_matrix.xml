@@ -1,0 +1,38 @@
+<!--
+    Input:
+        vendor/dolby/ds/service/aidl/impl/dax_framework_compatibility_matrix_aidl.xml
+        vendor/dolby/ds/service/hidl/dms/2.0/default/dax_framework_compatibility_matrix_hidl.xml
+        vendor/tinno/product/lamu/moto/xml/fdrcontrol_framework_compatibility_matrix.xml
+-->
+<compatibility-matrix version="8.0" type="framework">
+    <hal format="hidl" optional="true">
+        <name>motorola.hardware.fdrcontrol</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFdrControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>motorola.hardware.fdrcontrol</name>
+        <interface>
+            <name>IFdrControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.dolby.dms</name>
+        <interface>
+            <name>IDms</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.dolby.hardware.dms</name>
+        <version>2.0</version>
+        <interface>
+            <name>IDms</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>

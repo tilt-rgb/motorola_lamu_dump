@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <region name="EMEA">
+        <path>MotoInstaller</path>
+        <path>MotoFeedback</path>
+        <path>MotoHelp</path>
+        <path>ChromeHomePageProviderMoto</path>
+        <path>PartnerBookmarksProviderMoto</path>
+        <path include="timit,windit,3gb">MDIP</path>
+        <path include="retru">MotoLauncherConfigYandex</path>
+        <path include="timit">MotoLauncherConfigTimit</path>
+        <path include="playpl">MotoLauncherConfigPlaypl</path>
+        <path exclude="playpl,timit,retru">MotoLauncherConfig</path>
+        <path include="timit">Satispay</path>
+        <path exclude="orafr,bouyfr,altfr,altice,vfit,timit,windit,reteu,teleu">ApeFMRadio_MTK</path>
+        <path>KerrInlineSample</path>
+        <path>MotoLiveWallpaper3</path>
+        <path include="reteu,retgb,retmea,retru,teleu,o2gb,o2de,tescogb,tescoie,tefes,bouyfr,eegb,yoigo,vfeu,3gb,3ie,timit,windit,telhu,oraeu,dteu,dtpl,pluspl,altice,vipeu,veoneu">DigitalTurbine</path>
+        <path include="reteu,retgb">OneWeather</path>
+        <path include="reteu,retgb,retmea,retru,teleu">IronSource</path>
+        <path include="3gb">IronSource3UK</path>
+        <!--add for EKLAMU-1732 by jingtao.guo start-->
+        <path include="reteu,oraeu,altice,bouyfr,openeu">MotoSpaces</path>
+        <!--add for EKLAMU-1732 by jingtao.guo end-->
+        <!--add for EKLAMU-2803 taboola by jingtao.guo start-->
+        <path include="tescogb,vfeu,playpl,pluspl,tefes,reteu,retgb,3gb,o2de,o2gb,dteu,yoigo,oraeu,altice,bouyfr,windit,timit,teleu,retru">Taboola</path>
+        <!--add for EKLAMU-2803 taboola by jingtao.guo end-->
+        <path>SearchSelector</path>
+        <path include="oraeu">Orange</path>
+    </region>
+
+    <region name="LATAM">
+     <path exclude="att,attpre,cricket">MotoInstaller</path>
+     <path>MotoFeedback</path>
+    <path include="attmx,amxmx">MDIP</path>
+    <path exclude="attmx">MotoHelp</path>
+    <!--jingtao.guo add for EKLAMU-1007 StubMotorolaClaro ClaroContenedor start-->
+    <path include="amxbr,amxar">StubMotorolaClaro</path>
+    <path include="amxcl,amxco,amxpe,amxla">ClaroContenedor</path>
+    <path include="amxmx">TelcelContenedor</path>
+    <!--jjingtao.guo add for EKLAMU-1007 StubMotorolaClaro ClaroContenedor end-->
+    <!--add for EKLAMU-4215 by jingtao.guo start-->
+    <path include="amxcl,amxco,amxla,amxmx,amxpe">SysDLL</path>
+    <!--add for EKLAMU-4215 by jingtao.guo end-->
+	<path include="retbr, timbr, tefbr, openmx,altmx">BRApps2</path>
+	<!--add for EKLAMU-3729 facebook by jingtao.guo start-->
+	<path include="amxbr,amxcl,amxco,amxla,amxmx,amxpe">instagram</path>
+	<!--add for EKLAMU-3729 facebook by jingtao.guo end-->
+	<path>ChromeHomePageProviderMoto</path>
+	<path include="amxla,amxar,amxbr,retbr,amxcl,amxco,amxmx,amxpe">PartnerBookmarksProviderMoto</path>
+	<path include="amxcl,amxla,amxpe,amxco">MotoLauncherConfigClaro</path>
+	<path include="amxmx">MotoLauncherConfigAmxmx</path>
+	<path exclude="amxcl,amxla,amxpe,amxco,amxmx">MotoLauncherConfig</path>
+	<path>ApeFMRadio_MTK</path>
+	<path exclude="amxar,amxbr,retbr,amxcl,amxla,amxpe,amxco,amxmx">PartnerBookmarksProviderGms</path>
+        <!--xuankun.ouyang add for EKLAMU-8361 Glance start-->
+        <path include="altmx,openmx,attmx,tefmx,avaco">PayJoyAccess</path>
+        <!--xuankun.ouyangadd for EKLAMU-8361 Glance end-->
+        <path>KerrInlineSample</path>
+        <path>MotoLiveWallpaper3</path>
+        <path include="retla,retar,retbr,retcl,openmx,opencl,openla,openpe,openpub,retpe,attmx,tefar,tefbr,tefcl,tefco,tefla,tefmx,tefpe,tigca,tigco,perar,niipe,oibr,timbr,avaco,altmx,refartest,refbrtest,reflatest,tefco,tefcotest,tefec,tefectest">DigitalTurbine</path>
+        <path include="amxcl,amxco,amxpe,amxmx,amxbr,amxar,amxla">DigitalTurbineAmx</path>
+        <path include="amxmx,amxcl,amxar,amxbr,amxla,amxpe,amxco">OneWeatherAmx</path>
+        <path include="retus,retca,retbr,openmx,retar,spectrum,fi,comcast,cc,boost,vzwpre,vzw,usc,tracfone,tmo,cricket,attpre,att,attmx,altmx,tefmx">OneWeather</path>
+        <path include="retus,retca,retla,retar,retbr,retcl,openmx,retpe">IronSource</path>
+        <!--jingtao.guo add for EKLAMU-557 Glance start-->
+        <path include="retbr, amxbr, timbr, tefbr">MotoGlance</path>
+        <!--jingtao.guo add for EKLAMU-557 Glance end-->
+        <!--add for EKLAMU-2803 taboola by jingtao.guo start-->
+        <path include="openmx,womcl,entcl,niipe,tigco,womco,altmx,attmx,tigca,retla">Taboola</path>
+        <!--add for EKLAMU-2803 taboola by jingtao.guo end-->
+    </region>
+
+    <region name="APAC">
+        <path>MotoInstaller</path>
+        <path>MotoFeedback</path>
+        <path>PartnerBookmarksProviderGms</path>
+        <path>ApeFMRadio_MTK</path>
+        <path include="vfau,docomo">MDIP</path>
+        <path>MotoHelp</path>
+	<path>MotoLauncherConfig</path>
+	<path>KerrInlineSample</path>
+	<path>MotoLiveWallpaper3</path>
+        <path include="retapac,retid,retin,retjio,retjp,retkr,retsea,telstra,vfau,optus,amzin,jioin,airin,gt4gtw,trueth,smarthk,mobilpk,softbank,ymobile,lguplus,retsrilanka">DigitalTurbine</path>
+	<path include="retapac,retid,retjp,retkr,retsea,retsrilanka">IronSource</path>
+        <!--jingtao.guo add for EKLAMU-557 Glance start-->
+        <path include="retin,retjio">MotoGlance</path>
+        <!--jingtao.guo add for EKLAMU-557 Glance end-->
+        <!--add for EKLAMU-2803 taboola by jingtao.guo start-->
+        <path include="retapac,retkr,retth">Taboola</path>
+        <!--add for EKLAMU-2803 taboola by jingtao.guo end-->
+	<path include="retjio">MyJio</path>
+	<path include="retin">SearchSelector</path>
+	<path include="retanz">HomepageAPAC</path>
+    </region>
+
+    <region name="unknown">
+        <path>MotoInstaller</path>
+        <path>MotoHelp</path>
+        <path>ApeFMRadio_MTK</path>
+        <path>MotoFeedback</path>
+        <path>KerrInlineSample</path>
+        <path>MotoLiveWallpaper3</path>
+        <path>MotoLauncherConfig</path>
+    </region>
+</config>

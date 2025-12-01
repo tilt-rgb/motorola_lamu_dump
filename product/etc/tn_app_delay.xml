@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filter-conf>
+    <app>com.tencent.tmgp.sgame</app>
+    <app>com.tencent.tmgp.sgamece</app>
+    <app>com.tencent.tmgp.pubgmhd</app>
+    <app>com.miHoYo.Yuanshen</app>
+    <app>com.miHoYo.ys.bilibili</app>
+    <app>com.miHoYo.ys.mi</app>
+    <app>com.miHoYo.GenshinImpact</app>
+    <app>com.tencent.lolm</app>
+    <app>com.tencent.tmgp.speedmobile</app>
+    <app>com.tencent.ig</app>
+    <app>com.pubg.imobile</app>
+    <app>com.mobile.legends:UnityKillsMe</app>
+    <app>com.dts.freefireth</app>
+    <app>com.riotgames.league.wildrift</app>
+    <app>com.garena.game.codm</app>
+    <app>com.shopee.ph</app>
+    <app>com.shopee.br</app>
+    <app>com.snapchat.android</app>
+    <app>com.whatsapp</app>
+    <app>com.instagram.android</app>
+    <app>com.roposo.android</app>
+    <app>jp.naver.line.android</app>
+    <app>com.google.android.youtube</app>
+    <app>com.google.android.youtube.music</app>
+    <app>com.google.android.gm</app>
+    <app>com.google.android.videos</app>
+    <app>com.imo.android.imoim</app>
+    <app>com.twitter.android</app>
+    <app>com.facebook.katana</app>
+    <app>com.UCMobile</app>
+    <app>com.android.vending</app>
+    <app>com.facebook.lite</app>
+    <app>com.lazada.android</app>
+    <app>com.zing.zalo</app>
+    <app>com.linecorp.linelite</app>
+    <app>com.ss.android.ugc.aweme</app>
+    <app>com.zhiliaoapp.musically</app>
+    <app>com.supercell.brawlstars</app>
+    <app>com.supercell.clashofclans</app>
+    <app>com.activision.callofduty.shooter</app>
+    <app>com.lilithgame.roc.gp</app>
+    <app>com.vng.vltkm</app>
+</filter-conf>
