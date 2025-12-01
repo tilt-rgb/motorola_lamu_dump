@@ -1,0 +1,20 @@
+## lamu_g-user 15 VVTA35.51-137 7eabca release-keys
+- Manufacturer: motorola
+- Platform: mt6768
+- Codename: lamu
+- Brand: motorola
+- Flavor: lamu_sys-user
+- Release Version: 15
+- Kernel Version: 6.6.82
+- Id: VVTA35.51-137
+- Incremental: 7eabca
+- Tags: release-keys
+- CPU Abilist: arm64-v8a
+- A/B Device: true
+- Treble Device: true
+- Locale: en-US
+- Screen Density: undefined
+- Fingerprint: motorola/lamu_g/lamu:15/VVTA35.51-137/7eabca:user/release-keys
+- OTA version: 
+- Branch: lamu_g-user-15-VVTA35.51-137-7eabca-release-keys
+- Repo: motorola_lamu_dump

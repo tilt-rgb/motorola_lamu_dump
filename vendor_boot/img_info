@@ -1,0 +1,17 @@
+kernel=kernel
+ramdisk=ramdisk
+second=second.img
+page_size=861090870
+dt=dtb.img
+kernel_size=4
+ramdisk_size=1074266112
+second_size=24392808
+dtb_offset=0x00007000
+dtb_size=1311912748
+base_addr=0xffff9000
+kernel_offset=0x00008000
+ramdisk_offset=0x47c87000
+tags_offset=0x3d74e06f
+dtbo_offset=
+cmd_line='1:1280x800@60'
+board="N2 video=HDMI-A-"
