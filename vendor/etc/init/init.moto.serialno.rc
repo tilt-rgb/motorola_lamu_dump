@@ -1,0 +1,3 @@
+on property:ro.boot.serialno=*
+    setprop ro.vendor.boot.serialno ${ro.boot.serialno}
+    setprop vendor.gsm.serial ${ro.boot.serialno}

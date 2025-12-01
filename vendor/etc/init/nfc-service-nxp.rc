@@ -1,0 +1,10 @@
+on boot && property:ro.boot.product.hardware.sku=nfc_ss
+    start vendor.nfc_hal_service
+on boot && property:ro.boot.product.hardware.sku=nfc_dsds
+    start vendor.nfc_hal_service
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.nxp
+    class early_hal
+    user nfc
+    group nfc drmrpc system
+    disabled

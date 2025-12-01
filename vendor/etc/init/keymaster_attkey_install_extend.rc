@@ -1,0 +1,12 @@
+service keymaster_attkey_install_extend /vendor/bin/keymaster_attkey_install_extend
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+
+on property:vendor.attestation.clean=true
+   start keymaster_attkey_install_extend
+   
+on property:vendor.attestation.chown=true
+   start keymaster_attkey_install_extend

@@ -1,0 +1,11 @@
+service keymaster_csr_create /vendor/bin/keymaster_csr_create
+    class late_start
+    user root
+    group root
+    oneshot
+    disabled
+
+on property:vendor.createcsr.flag=true
+   start keymaster_csr_create
+on property:vendor.createcsr.flag=false
+   stop keymaster_csr_create

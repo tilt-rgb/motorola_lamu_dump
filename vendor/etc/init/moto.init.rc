@@ -1,0 +1,11 @@
+# TN Begin modify by xinguang.dong 20240808 for moto ramboost
+on early-init
+   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -r -d /vendor/lib/modules zram
+
+on late-init
+   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules moto_mm moto_swap
+
+on property:sys.boot_completed=1
+   exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules moto_mmap_fault
+
+# TN End modify by xinguang.dong 20240808 for moto ramboost

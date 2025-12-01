@@ -1,0 +1,12 @@
+service vendor.fingerprint-gf /vendor/bin/hw/android.hardware.biometrics.fingerprint-service.gf
+    class late_start
+    user system
+    group system input uhid
+    capabilities WAKE_ALARM
+
+on property:ro.vendor.fp.driver="ofi-gf3976"
+    start vendor.fingerprint-default
+
+on property:ro.vendor.fp.driver="qtech-fpc1560"
+    start vendor.fingerprint-default
+

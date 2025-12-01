@@ -1,0 +1,6 @@
+service vendor.mot.fdrcontrol-hal /vendor/bin/hw/motorola.hardware.fdrcontrol-service
+    interface aidl motorola.hardware.fdrcontrol.IFdrControl/default
+    class hal
+    user root
+    group root system
+
