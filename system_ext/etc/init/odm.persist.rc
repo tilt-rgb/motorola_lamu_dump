@@ -1,0 +1,10 @@
+#mount persist modify by yang.chen/860621 CR/EKLAMU-1617
+on boot
+   # Bind mount of a persist partition
+   mkdir /mnt/vendor/persist/misc 0775 system system
+   mkdir /mnt/persist 0775 system system
+   mkdir /mnt/persist/misc 0775 system system
+   mount none /mnt/vendor/persist/misc /mnt/persist/misc bind
+   restorecon_recursive /mnt/persist/misc
+   chmod 0775 /mnt/persist/misc/FTM_APP
+   chmod 0775 /mnt/persist/misc/FTM_APP/FTM_report

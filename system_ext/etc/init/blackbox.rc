@@ -1,0 +1,31 @@
+# blackbox
+service poweronlog /system_ext/bin/poweronlog.sh
+    class main
+    user root
+    group system cache
+    oneshot
+    disabled
+
+on post-fs
+    mkdir /mnt/blackbox 0770 system system
+    restorecon_recursive /mnt/blackbox
+    mkdir /mnt/blackbox/poweron_log 0770 system system
+    mkdir /mnt/blackbox/rescue_log 0770 system system
+    mkdir /mnt/blackbox/fatal_log 0770 system system
+
+on property:init.svc.zygote=restarting
+    start poweronlog
+
+service rescuelog /system_ext/bin/rescuelog.sh
+    class main
+    user root
+    group system cache
+    oneshot
+    disabled
+
+service fatallog /system_ext/bin/fatallog.sh
+    class main
+    user root
+    group system cache
+    oneshot
+    disabled
